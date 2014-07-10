@@ -81,7 +81,7 @@ The proposal below is to complete the matrix for List, Array and Seq w.r.t. func
 | pick       |           |     o     |        o  |     o    |   done       |     done     |
 | reduce     |           |     o     |        o  |     o    |   done       |     done     |
 | reduceBack |           |    o      |         o |      ADD |          |          |
-| replicate  |  New, signature ``int -> C<'T> -> C<'T>``         |     o    |    ADD    |   ADD    |    [@sforkmann](https://twitter.com/sforkmann)      |    [Related PR submitted](https://visualfsharp.codeplex.com/SourceControl/network/forks/forki/fsharp/contribution/7060)      |     |
+| replicate  |  New, signature ``int -> C<'T> -> C<'T>``         |     ADD    |    ADD    |   ADD    |    [@sforkmann](https://twitter.com/sforkmann)      |    [Related PR submitted](https://visualfsharp.codeplex.com/SourceControl/network/forks/forki/fsharp/contribution/7060)      |     |
 | rev        |           |    o      |   o       |    ADD   |         |           |
 | scan       |           |     o     |      o    |     o    | done         |   done       |
 | scanBack   |           |     o     |    o      |   ADD    |          |          |
