@@ -117,6 +117,12 @@ Note: In F# 3.x, ``nth`` is defined with inconsistent signatures for Array and L
 ``item`` and would eventually deprecate ``nth`` (with a message to say 'please use Seq.item'. It also adds a corresponding ``tryItem``.  Both ``item`` and ``tryItem``  would take the integer index as the first parameter.
 
 
+Note: In F# 3.x, ``String.replicate``, ``List.replicate`` and ``Array.create`` exist with inconsistent signatures. The proposal
+above addresses this by moving to:
+
+    create: int -> X -> C<X>   // for String, Array, List, Seq
+    repeat: int -> C<X> -> C<X>   // for String, Array, List, Seq
+
 
 ## Regular functional operators producing two or more output collections 
 
