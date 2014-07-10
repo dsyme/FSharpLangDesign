@@ -46,8 +46,8 @@ The proposal below is to complete the matrix for List, Array and Seq w.r.t. func
 | findBack   |    new    |   ADD     |     ADD   |  ADD     |         |              |          |
 | findIndex  |           |  o        |      o    |      o   |         | done         |     done     |
 | findIndexBack  |  new  |  ADD      |      ADD  |  ADD     |         |              |          |
-| fold       |           |     o     |     o     |     o    | done         |     done     |
-| fold2      |           |   o       |    o      |     ADD  |   [@sforkmann](https://twitter.com/sforkmann)       |   [PR submitted](https://visualfsharp.codeplex.com/SourceControl/network/forks/forki/fsharp/contribution/7075)       |
+| fold       |           |     o     |     o     |     o    |         | done         |     done     |
+| fold2      |           |   o       |    o      |     ADD  |         |   [@sforkmann](https://twitter.com/sforkmann)       |   [PR submitted](https://visualfsharp.codeplex.com/SourceControl/network/forks/forki/fsharp/contribution/7075)       |
 | foldBack   |           |   o       |    o      |   ADD    |         |          |          |
 | foldBack2  |           |   o       |   o       |    ADD   |         |          |          |
 | forall     |           |   o       |  o        |     o    |     o    |    done      |   done       |
@@ -75,8 +75,8 @@ The proposal below is to complete the matrix for List, Array and Seq w.r.t. func
 | maxBy      |           |    o      | o         |    o     |         |   done       |     done     |
 | min        |           |  o        |         o |  o       |         |   done       |     done     |
 | minBy      |           |    o      |   o       |    o     |         |   done       |     done     |
-| nth        |  see note         |      long-term deprecate, see note    | long-term deprecate, see note       |  long-term deprecate, see note   |   [@max_malook](https://twitter.com/max_malook)    |         |
-| pairwise   |           |     ADD   |    ADD    |     o    |  [@sforkmann](https://twitter.com/sforkmann)        |   [PR submitted](https://visualfsharp.codeplex.com/SourceControl/network/forks/forki/fsharp/contribution/7045)       |
+| nth        |  see note         |      long-term deprecate, see note    | long-term deprecate, see note       |  long-term deprecate, see note   |         |   [@max_malook](https://twitter.com/max_malook)    |         |
+| pairwise   |           |     ADD   |    ADD    |     o    |         |  [@sforkmann](https://twitter.com/sforkmann)        |   [PR submitted](https://visualfsharp.codeplex.com/SourceControl/network/forks/forki/fsharp/contribution/7045)       |
 | permute    |           |    o      |       o   |    ADD   |         |          |          |
 | pick       |           |     o     |        o  |     o    |         |   done       |     done     |
 | reduce     |           |     o     |        o  |     o    |          |  done       |     done     |
