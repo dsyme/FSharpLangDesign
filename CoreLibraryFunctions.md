@@ -170,8 +170,9 @@ These operators are not defined for Seq.* for performance reasons because using 
 |:-----------|:----------|:---------:|:---------:|:--------:|:--------:|:--------:|
 | cache      |           |    n/a    |    n/a    |   o      |          |          |
 | cast       |           |   n/a     |   n/a     |   o      |          |          |
+| createInfinite | New, signature ``'T -> C<'T>``  |    n/a    |   n/a     |    NEW     |          |          |
 | delay      |           |    n/a    |    n/a    |    o     |          |          |
 | initInfinite |         |    n/a    |   n/a     |    o     |          |          |
-| replicateInfinite  |  New, signature ``C<'T> -> C<'T>``  |  n/a  |  n/a  |   o    |    |   |
+| repeatInfinite  |  New, signature ``C<'T> -> C<'T>``  |  n/a  |  n/a  |   NEW    |    |   |
 | readonly   |           |     n/a   |      n/a  |   o      |         |           |  
 
