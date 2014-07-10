@@ -34,6 +34,7 @@ The proposal below is to complete the matrix for List, Array and Seq w.r.t. func
 | compareWith|           |  ADD      |     ADD   |     o    |   [@sforkmann](https://twitter.com/sforkmann)       |  [PR submitted](https://visualfsharp.codeplex.com/SourceControl/network/forks/forki/fsharp/contribution/7040)        |
 | concat     |           |     o     |       o   |     o    |   done       | done         |
 | countBy    |           |  ADD      |     ADD   |      o   |    [@sforkmann](https://twitter.com/sforkmann)      |  [PR submitted](https://visualfsharp.codeplex.com/SourceControl/network/forks/forki/fsharp/contribution/7068)        |
+| create     |           |   ADD     |      o    |    ADD   |          |          |
 | distinct   |           |   ADD     |     ADD   |     o    |   [@sforkmann](https://twitter.com/sforkmann)       |   [PR submitted](https://visualfsharp.codeplex.com/SourceControl/network/forks/forki/fsharp/contribution/7047)       |
 | distinctBy |           |    ADD    |    ADD    |    o     |   [@sforkmann](https://twitter.com/sforkmann)       |   [PR submitted](https://visualfsharp.codeplex.com/SourceControl/network/forks/forki/fsharp/contribution/7048)       |
 | empty      |           |    o      |    o      |      o   |   done       |   done       |
@@ -56,7 +57,7 @@ The proposal below is to complete the matrix for List, Array and Seq w.r.t. func
 | indexed       |   new, signature ``indexed: C<T> -> C<int*T>``        |   o       |    o      |     o    |   ---       |   ---       |
 | init       |           |   o       |    o      |     o    |   done       |   done       |
 | isEmpty    |           |    o      |     o     |      o   |   done       |     done     |
-| item    |   New, see note. SIgnature ``int -> C<'T> -> 'T``        |      ADD    | ADD       |  ADD       |   [@max_malook](https://twitter.com/max_malook)    | [PR submitted](https://visualfsharp.codeplex.com/SourceControl/network/forks/mexx24/visualfsharp/contribution/7097)  |
+| item    |   New, see note. Signature ``int -> C<'T> -> 'T``        |      ADD    | ADD       |  ADD       |   [@max_malook](https://twitter.com/max_malook)    | [PR submitted](https://visualfsharp.codeplex.com/SourceControl/network/forks/mexx24/visualfsharp/contribution/7097)  |
 | iter       |           |   o       |      o    |     o    |   done       |     done     |
 | iter2      |           |    o      |       o   |    o     |   done       |       done   |
 | iteri      |           |    o      |       o   |    o     |   done       |     done     |
@@ -80,8 +81,8 @@ The proposal below is to complete the matrix for List, Array and Seq w.r.t. func
 | pick       |           |     o     |        o  |     o    |   done       |     done     |
 | reduce     |           |     o     |        o  |     o    |   done       |     done     |
 | reduceBack |           |    o      |         o |      ADD |          |          |
-| replicate  |           |     o    |    ADD    |   ADD    |    [@sforkmann](https://twitter.com/sforkmann)      |    [PR submitted](https://visualfsharp.codeplex.com/SourceControl/network/forks/forki/fsharp/contribution/7060)      |
-| rev        |           |    o      |   o       |    ADD   |          |          |
+| replicate  |  New, signature ``int -> C<'T> -> C<'T>``         |     o    |    ADD    |   ADD    |    [@sforkmann](https://twitter.com/sforkmann)      |    [Related PR submitted](https://visualfsharp.codeplex.com/SourceControl/network/forks/forki/fsharp/contribution/7060)      |     |
+| rev        |           |    o      |   o       |    ADD   |         |           |
 | scan       |           |     o     |      o    |     o    | done         |   done       |
 | scanBack   |           |     o     |    o      |   ADD    |          |          |
 | singleton  |           |    ADD    |     ADD   |    o     |   [@sforkmann](https://twitter.com/sforkmann)       |    [PR submitted](https://visualfsharp.codeplex.com/SourceControl/network/forks/forki/fsharp/contribution/7041)      |
@@ -136,7 +137,6 @@ These operators are not defined for Seq.* for performance reasons because using 
 |:-----------|:----------|:---------:|:---------:|:--------:|:--------:|:--------:|
 | blit       |           |     n/a   |   o       |   n/a    |          |          |
 | copy       |           |   n/a     |     o     |     n/a  |          |          |
-| create     |           |   n/a     |      o    |    n/a   |          |          |
 | fill       |           |   n/a     |     o     |     n/a  |          |          |
 | get        |           |    n/a    |     o     |  n/a     |          |          |
 | set        |           |    n/a    |   o       |    n/a   |          |          |
@@ -165,4 +165,6 @@ These operators are not defined for Seq.* for performance reasons because using 
 | cast       |           |   n/a     |   n/a     |   o      |          |          |
 | delay      |           |    n/a    |    n/a    |    o     |          |          |
 | initInfinite |         |    n/a    |   n/a     |    o     |          |          |
-| readonly   |           |     n/a   |      n/a  |   o      |          |          |
+| replicateInfinite  |  New, signature ``C<'T> -> C<'T>``  |  n/a  |  n/a  |   o    |    |   |
+| readonly   |           |     n/a   |      n/a  |   o      |         |           |  
+
